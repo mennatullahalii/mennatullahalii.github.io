@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FFF1D3] flex flex-col font-sans selection:bg-[#CA5995] selection:text-white">
+    <main className="min-h-screen bg-brand-cream flex flex-col font-sans selection:bg-brand-pink selection:text-white">
       {/* Main Hero Content */}
       <section className="flex-grow flex flex-col justify-center px-8 max-w-7xl mx-auto w-full py-12 lg:py-0">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Right Column: Image (Appears on top for mobile, right for desktop) */}
           <div className="w-full max-w-sm lg:max-w-none lg:w-[300px] xl:w-[300px] shrink-0 order-first lg:order-last">
-            <div className="aspect-square relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white/50 bg-[#FFB090]/10">
+            <div className="aspect-square relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white/50 bg-brand-peach/10">
               <Image
                 src="/me.jpg" // <-- Change this to your actual photo (e.g., "/me.jpg")
                 alt="Mennatullah Elsawy"
@@ -25,29 +25,32 @@ export default function Home() {
           {/* Left Column: Text Content */}
           <div className="flex-1 w-full flex flex-col justify-center">
             {/* Availability Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFB090]/20 border border-[#FFB090]/40 w-fit mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-peach/20 border border-brand-peach/40 w-fit mb-8">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#CA5995] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#CA5995]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-pink"></span>
               </span>
-              <span className="text-[#5D1C6A] text-xs font-bold tracking-wider uppercase">
+              <span className="text-brand-purple text-xs font-bold tracking-wider uppercase">
                 Available for Frontend and Fullstack roles in Berlin
               </span>
             </div>
 
             {/* Massive Typography */}
             <h1 className="text-[4rem] md:text-[5.5rem] xl:text-[7rem] font-extrabold leading-[0.95] tracking-tight mb-6">
-              <span className="block text-[#5D1C6A]">Mennatullah</span>
-              <span className="block text-[#CA5995]">Elsawy.</span>
+              <span className="block text-brand-purple">Mennatullah</span>
+              <span className="block text-brand-pink">Elsawy.</span>
             </h1>
 
             {/* About / Impact Statement */}
-            <p className="max-w-2xl text-xl md:text-2xl text-[#5D1C6A]/80 leading-relaxed mb-10">
+            <p className="max-w-2xl text-xl md:text-2xl text-brand-purple/80 leading-relaxed mb-10">
               Frontend Engineer with a strong end-to-end product mindset with
-              <strong className="text-[#5D1C6A] font-bold"> 6+ years</strong> of
-              of experience specializing in Angular and modern web technologies.
-              Skilled in building scalable applications across e-commerce,
-              healthcare, and enterprise domains. Expert in frontend
+              <strong className="text-brand-purple font-bold">
+                {" "}
+                6+ years
+              </strong>{" "}
+              of of experience specializing in Angular and modern web
+              technologies. Skilled in building scalable applications across
+              e-commerce, healthcare, and enterprise domains. Expert in frontend
               architecture, leading complex migrations, and implementing
               microfrontend architecture to deliver high-performance
               applications while collaborating with diverse, multicultural teams
@@ -58,7 +61,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <Link
                 href="#footer"
-                className="inline-flex items-center justify-center gap-2 bg-[#5D1C6A] text-[#FFF1D3] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#CA5995] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-brand-purple text-brand-cream px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-pink transition-colors"
               >
                 Get in touch
                 <svg
@@ -78,7 +81,7 @@ export default function Home() {
 
               <a
                 href="/cv.pdf"
-                className="inline-flex items-center justify-center gap-2 border-2 border-[#5D1C6A] text-[#5D1C6A] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#5D1C6A] hover:text-[#FFF1D3] transition-colors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-brand-purple text-brand-purple px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-purple hover:text-brand-cream transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Contact Info Footer Bar */}
-            <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-[#5D1C6A]/70 font-medium pb-8">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-brand-purple/70 font-medium pb-8">
               <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +124,7 @@ export default function Home() {
 
               <a
                 href="mailto:mennatullahalii.dev@gmail.com"
-                className="flex items-center gap-2 hover:text-[#CA5995] transition-colors"
+                className="flex items-center gap-2 hover:text-brand-pink transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +145,7 @@ export default function Home() {
 
               <a
                 href="tel:+4917677055362"
-                className="flex items-center gap-2 hover:text-[#CA5995] transition-colors"
+                className="flex items-center gap-2 hover:text-brand-pink transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

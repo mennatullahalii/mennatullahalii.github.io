@@ -19,7 +19,7 @@ export default function SkillsPage() {
           <polyline points="16 18 22 12 16 6"></polyline>
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#5D1C6A] tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-brand-purple tracking-tight">
           Skills.
         </h1>
       </div>
@@ -27,8 +27,8 @@ export default function SkillsPage() {
       {/* Skills Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {/* Frontend Core */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             Frontend Core
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -42,7 +42,7 @@ export default function SkillsPage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -51,8 +51,8 @@ export default function SkillsPage() {
         </div>
 
         {/* Architecture & Tooling */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             Architecture & Tooling
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -65,7 +65,7 @@ export default function SkillsPage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -74,8 +74,8 @@ export default function SkillsPage() {
         </div>
 
         {/* Styling & UI */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             Styling & UI
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -90,7 +90,7 @@ export default function SkillsPage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -99,8 +99,8 @@ export default function SkillsPage() {
         </div>
 
         {/* Testing & Quality */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             Testing & Quality
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -118,7 +118,7 @@ export default function SkillsPage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -127,14 +127,14 @@ export default function SkillsPage() {
         </div>
 
         {/* DevOps */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">DevOps</h2>
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">DevOps</h2>
           <div className="flex flex-wrap gap-3">
             {["Jenkins", "GitLab CI", "Git", "Jira", "Confluence"].map(
               (skill) => (
                 <span
                   key={skill}
-                  className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                  className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
                 >
                   {skill}
                 </span>
@@ -144,8 +144,8 @@ export default function SkillsPage() {
         </div>
 
         {/* AI & Productivity */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             AI & Productivity
           </h2>
           <div className="flex flex-wrap gap-3">
@@ -157,7 +157,7 @@ export default function SkillsPage() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -165,15 +165,15 @@ export default function SkillsPage() {
           </div>
         </div>
         {/* Backend Technologies */}
-        <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 hover:bg-[#5D1C6A]/[0.02] transition-colors">
-          <h2 className="text-xl font-bold text-[#5D1C6A] mb-6">
+        <div className="border border-brand-purple/20 rounded-3xl p-8 hover:bg-brand-purple/[0.02] transition-colors">
+          <h2 className="text-xl font-bold text-brand-purple mb-6">
             Backend Technologies
           </h2>
           <div className="flex flex-wrap gap-3">
             {["Java", "Spring Boot"].map((skill) => (
               <span
                 key={skill}
-                className="bg-[#5D1C6A] text-[#FFF1D3] px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
+                className="bg-brand-purple text-brand-cream px-4 py-1.5 rounded-full text-sm font-medium tracking-wide"
               >
                 {skill}
               </span>
@@ -183,7 +183,7 @@ export default function SkillsPage() {
       </div>
 
       {/* Languages Section */}
-      <div className="border border-[#5D1C6A]/20 rounded-3xl p-8 md:p-10 w-full hover:bg-[#5D1C6A]/[0.02] transition-colors">
+      <div className="border border-brand-purple/20 rounded-3xl p-8 md:p-10 w-full hover:bg-brand-purple/[0.02] transition-colors">
         <div className="flex items-center gap-4 mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -203,9 +203,9 @@ export default function SkillsPage() {
             <path d="m22 22-5-10-5 10" />
             <path d="M14 18h6" />
           </svg>
-          <h2 className="text-xl font-bold text-[#5D1C6A]">Languages</h2>
+          <h2 className="text-xl font-bold text-brand-purple">Languages</h2>
         </div>
-        <p className="text-[#5D1C6A]/80 font-medium text-lg ml-11">
+        <p className="text-brand-purple/80 font-medium text-lg ml-11">
           English (Professional) · Arabic (Native) · German (Beginner — A2)
         </p>
       </div>
