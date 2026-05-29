@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
+  /* This exposes your core semantic colors to Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+
+  /* I am also exposing your exact palette just in case you want to use them manually (e.g., bg-brand-peach) */
+  --color-brand-cream: #fff1d3;
+  --color-brand-peach: #ffb090;
+  --color-brand-pink: #ca5995;
+  --color-brand-purple: #5d1c6a;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Light Mode */
+    --background: #fff1d3; /* Cream background */
+    --foreground: #5d1c6a; /* Dark Purple text for high contrast */
+    --accent: #ca5995; /* Deep Rose for links and buttons */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark Mode */
+      --background: #5d1c6a; /* Dark Purple background */
+      --foreground: #fff1d3; /* Cream text for readability */
+      --accent: #ffb090; /* Soft Peach for accents (pops better on dark backgrounds) */
+    }
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
