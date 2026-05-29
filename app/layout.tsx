@@ -12,8 +12,7 @@ export const metadata: Metadata = {
   description:
     "Frontend Engineer specializing in scalable enterprise applications.",
   icons: {
-    // 2. Reference the icon directly from the root (omitting "public/")
-    icon: "/globe.svg",
+    icon: "/portfolio.svg",
   },
 };
 export default function RootLayout({
