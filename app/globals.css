@@ -20,15 +20,6 @@
     --foreground: #5d1c6a; /* Dark Purple text for high contrast */
     --accent: #ca5995; /* Deep Rose for links and buttons */
   }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      /* Dark Mode */
-      --background: #5d1c6a; /* Dark Purple background */
-      --foreground: #fff1d3; /* Cream text for readability */
-      --accent: #ffb090; /* Soft Peach for accents (pops better on dark backgrounds) */
-    }
-  }
 }
 
 body {
