@@ -127,7 +127,7 @@ export default function Nav() {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-brand-cream border-b border-brand-purple/10 shadow-xl py-6 px-6 flex flex-col gap-6 font-medium text-brand-purple text-lg z-50">
           <Link
-            href="/about"
+            href="/"
             onClick={() => setIsOpen(false)}
             className="hover:text-brand-pink transition-colors"
           >
